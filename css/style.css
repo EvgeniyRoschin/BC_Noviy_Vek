@@ -1,0 +1,190 @@
+@font-face {
+    font-family: opensans-regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: opensans-bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: opensans-bold;
+    margin: 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 6vw;
+}
+
+.telephone-number {
+    text-decoration: none;
+    height: 40px;
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: #1b4f9b;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.telephone-number:hover {
+    background-color: #473f73;
+    box-shadow: 0 0 10px #a4b8d6;
+}
+
+.header-wrapper {
+    background-color: #1b4f9b;
+    background-image: url(../images/bgr1920.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    color: #ffffff;
+    padding: 200px 6vw;
+}
+
+.main-header {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.second-header {
+    font-size: 40px;
+    margin-left: 20vw;
+    margin-top: 0;
+}
+
+@media (max-width: 641px) {
+    .logo-wrapper {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        width: 86vw;
+    }
+
+    .telephone-number {
+        height: 30px;
+        padding: 5px 20px;
+        border-radius: 15px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .header-wrapper {
+        background-image: url(../images/bgr640.jpg);
+        background-position: 50% 0%;
+        color: #ffffff;
+        padding: 90px 6vw;
+    }
+
+    .main-header {
+        font-size: 35px;
+    }
+    
+    .second-header {
+        font-size: 25px;
+        margin-left: 10vw;
+    }
+}
+
+.icon {
+    height: 60px;
+}
+
+main {
+    padding: 30px 6vw 0;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage-item {
+    width: 26vw;
+    border: 3px solid #1b4f9b;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.advantage-item:hover {
+    background-color: #bfd2f0
+}
+
+.advantage-icon-circle {
+   padding-top: 10px;
+}
+
+.map-wrapper {
+    border: 3px solid #1b4f9b;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 641px) {
+    .advantage-item {
+        width: 40vw;
+        margin-bottom: 10px;
+
+    }
+
+    .advantage-describtion-text {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.page-footer {
+    background-color: #1b4f9b;
+    color: #ffffff;
+    padding: 30px 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-text {
+    font-family: opensans-regular;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.telephone-number-footer {
+    background-color: #ffffff;
+    color: #1b4f9b;
+    height: 30px;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.telephone-number-footer:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+}
+
+@media (max-width: 641px) {
+    .page-footer {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+}
